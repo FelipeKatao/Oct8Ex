@@ -1,0 +1,7 @@
+{
+    "NewComponent":{
+        "prefix": "Comp",
+        "body": ["function base(){ //code  }"],
+        "description": "Criacao de um componente base"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "oct8",
+  "displayName": "oct8",
+  "description": "Code Snippets para Oct8 , um framework em javascript para aprimorar a sua criação com a linguagem Js atraves com sistemas de componentes.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "'javascript'",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
