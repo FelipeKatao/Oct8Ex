@@ -2,7 +2,7 @@
   "name": "oct8",
   "displayName": "oct8",
   "description": "Code Snippets for Oct8 , A front end framework, for managing components within the application. In addition to creating pagination and animation system and composition of elements, extension to generate basic OCt8 codes.",
-  "icon": "./img/oct8logo_final.png",
+  "icon": "img/oct8logo_final.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.0.0"
