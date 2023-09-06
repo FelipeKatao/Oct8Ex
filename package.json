@@ -4,6 +4,11 @@
   "description": "Code Snippets for Oct8 , A front end framework, for managing components within the application. In addition to creating pagination and animation system and composition of elements, extension to generate basic OCt8 codes.",
   "icon": "img/oct8logo_final.png",
   "version": "0.0.1",
+  "publisher": "FelipeCatao",
+  "author": {
+    "name": "Felipe Catão",
+    "email": "felipecatao@formigatec.com"
+  },
   "engines": {
     "vscode": "^1.0.0"
   },
