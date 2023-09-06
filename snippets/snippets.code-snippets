@@ -1,7 +1,51 @@
 {
-    "NewComponent":{
-        "prefix": "Comp",
-        "body": ["function base(){ //code  }"],
-        "description": "Criacao de um componente base"
+    "Create New Obj Factory":{
+        "prefix": "NewObjectFactory",
+        "body": ["${1:oct8}.CreateObjectFactory(()=>{ ","//Your component base//", "let Object = ${2:oct8}.CreateContainerElement('Id','IdAppendElement','class','div')" ,
+        "${3:oct8}.ModifyPropsDefault(Object,null,null,null,null)}",",\"${4:CompName}\")"],
+        "description": "Creating a base factory component for Oct8."
+    },
+    "Create New obj factory with props":{
+        "prefix": "NewObjectFactoryProps",
+        "body": ["${1:oct8}.CreateObjectFactory((props)=>{ ",
+        "//Your component base//","let Object = ${2:oct8}.CreateContainerElement('Id','IdAppendElement','class','div')"
+        ,"${3:oct8}.ModifyPropsDefault(Object,null,null,null,null)","${1:oct8}.ModifyContentContainer(${2:CompName},",
+        "\" <h1>\"+ props[0] +\"</h1>\"+","\"</div>\"",")},\"${4:CompName}\")"],
+        "description": "Create a new component with special properties for the component"
+    },
+    "Render Obj Factory":{
+        "prefix": "RenderObjectFactory",
+        "body": ["${1:oct8}.AppendObjectFacyotyTo(\"${2:CompName}\",null)"],
+        "description": "Insert your factory element on the screen"
+    },
+    "Render obj Factory with props":{
+        "prefix": "RenderObjectFactoryWithProps",
+        "body": ["let prop={PropBase:[\"${3:Element}\"]} ","${1:oct8}.AppendObjectFacyotyTo(\"${2:CompName}\",prop.PropBase)"],
+        "description": "Render elements with special properties"
+    },
+    "Modify content element":{
+        "prefix": "ModifyElement",
+        "body": ["${1:oct8}.ModifyContentContainer(\"${2:CompName}\",","\"<div>\"+"
+        ," \" <h1> ${3:elementString} </h1>\"+","\"</div>\"",")"],
+        "description": "Modify existing screen elements"
+    },
+    "Create Especial Tags":{
+        "prefix": "CreateTags",
+        "body": ["${1:oct8}.createNewTag(\"TagName\",","\"<h1>Add your content</h1>\")"],
+        "description": "Create special tags"
+    },
+    "Create Especial Tags With Props":{
+        "prefix": "CreateTagsProps",
+        "body": ["${1:oct8}.createNewTag(\"TagName\",","()=>{","let List = oct8.CreateList(prop,\",\")",
+        "return \"<div><h2>\"+List[0]+\"</h2></div>\"","})"],
+        "description": "Create special tags with properties being passed"
+    },
+    "Render Especial tags":{
+        "prefix": "RenderEspecialTags",
+        "body": ["${1:oct8}.ReactiveTags(\"${2:TargetId}\")"],
+        "description": "Render the special tags"
     }
+
 }
+
+ 
